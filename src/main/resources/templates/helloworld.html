@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thymeleaf Demo</title>
+
+    <!--Remember you can use bootstrap css directly or from web hosted somewhere-->
+    <!-- from local or direct below-->
+    <!--<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />-->
+    <!-- from web-->
+    <!--<link rel="stylesheet" th:href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"}" />-->
+
+    <!-- reference CSS file  (@ symbol References context_path of tour application {app root} jez like pageContextPath in JSP)-->
+    <link rel="stylesheet" th:href="@{/css/demo.css}" />
+</head>
+<body>
+
+    <P th:text="${'Time on the server is ' + theDate}" class="funny" />
+</body>
+</html>
